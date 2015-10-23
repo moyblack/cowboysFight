@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    
+<title>Cowboys Fight</title> 
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href = "estilos_cowboys.css" rel = "stylesheet" type= "text/css">
+    <script src="funciones.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body style="background: #ecc35e">
+<div id="bg">
+
+
+</div>
+    
+<div id="escenario">
+    <div id="p1" onclick="disparo('p1')">
+        <div class="barra">
+        <img src="cowboy.png" id = "img-fbid1">
+        <p>Jugador 1</p>
+        <div id= "resultados-p1"></div>
+        </div>
+        <img src="v2.png" id="vaquero-p1">
+    </div>
+    <div id="p2" onclick="disparo('p2')">
+        <div class="barra">
+        <img src="cowboy.png" id="img-fbid2">
+        <p>Jugador 2</p>
+        <div id= "resultados-p2"></div>
+        </div>
+        <img src="v2.png" id="vaquero-p2">
+    </div>
+</div>
+
+<div id="mensaje" onclick="restablecer()">Listo</div>
+<div id="game-over" onclick="volverAJugar()">GAME-OVER</div>
+
+<div id="conteo"></div>
+<script>
+    window.addEventListener('load',animacion,true);    
+</script>
+    
+<audio id="audio">
+    <source src="bang.mp3" type= "audio/mp3">
+</audio>
+<audio id="wait">
+    <source src="wait.mp3" type= "audio/mp3">
+</audio>
+<audio id="bullets">
+    <source src="bullets.mp3" type= "audio/mp3">
+</audio>
+<audio id="horse">
+    <source src="horse.mp3" type= "audio/mp3">
+</audio>
+    
+</body>
+
+</html>
